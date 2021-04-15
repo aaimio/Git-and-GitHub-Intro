@@ -92,7 +92,7 @@ const createTeams = async () => {
 
         /**
          * Loop trap. If this is (ever) triggered, either:
-         * - Wait for the next merge to master so this resolves itself.
+         * - Wait for the next merge to main so this resolves itself.
          * - Trigger the action manually.
          */
         if (iterations > 100) {

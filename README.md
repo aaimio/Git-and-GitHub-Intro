@@ -34,7 +34,7 @@ $ touch people/<YOUR_USERNAME>
    - After creating a PR, the [github-actions[bot]](https://github.com/apps/github-actions) will review your PR immediately.
      - If the bot is happy, ask two of your peers to approve your pull request (this can be anyone).
      - If the bot is not happy, they will tell you what needs to be updated.
-6. **Help your friends or wait for a couple minutes**. After the [github-actions[bot]](https://github.com/apps/github-actions) is happy with your PR, it will check every 5 minutes or so to check whether you've obtained enough approvals for your PR to be merged to `master`.
+6. **Help your friends or wait for a couple minutes**. After the [github-actions[bot]](https://github.com/apps/github-actions) is happy with your PR, it will check every 5 minutes or so to check whether you've obtained enough approvals for your PR to be merged to `main`.
 7. Everything is OK? Tell one of your mentors to merge your PR.
 8. After a mentor has merged your PR, your name will be automatically assigned to a team.
 
@@ -69,7 +69,7 @@ $ touch people/<YOUR_USERNAME>
 - `people`: This is where people will add their GitHub username as a file to, this folder is used in `check-pull-request` and `create-teams` actions.
   - For `check-pull-request` we check whether the file name matches the PR opener's username.
   - For `create-teams` we use this folder as base to assign people to `teams.json`.
-- `public`: This is a folder we'll automagically deploy on each merge to master (after the `create-teams` action). This will showcase the generated teams.
+- `public`: This is a folder we'll automagically deploy on each merge to main (after the `create-teams` action). This will showcase the generated teams.
   - `resources`
     - `magic.js`: A small React component that represents the elements we'll show to the user. It's included through a `text/babel` tag in `index.html` allowing us to use modern JS and React. If you want to change how the teams are presented you can do so here.
     - `styles.css`: Simple stylesheet to create a somewhat presentable team overview.
