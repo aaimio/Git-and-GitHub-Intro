@@ -1,0 +1,26 @@
+.teams {
+  width: 100vw;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 150%;
+}
+
+.teams__team {
+  margin: 32px;
+  height: max-content;
+}
+
+.teams__team-header {
+  text-align: center;
+}
+
+.teams__person a {
+  text-decoration: none;
+  color: black;
+}
+
+.teams__person a:hover {
+  text-decoration: underline;
+}
