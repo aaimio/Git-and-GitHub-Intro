@@ -8,13 +8,13 @@
 # The task
 
 1. **Fork this repository to your own GitHub account**
-   - If you're reading this on GitHub then there should be a **Fork** button at the top of this page, click that button.
+   - If you're reading this on GitHub then there should be a **Fork** button at the top right of this page, click that button.
    - If you're reading this elsewhere, go to the URL of this repository on GitHub.
 2. **Clone the repository**
    - You can do so by going to your terminal and writing the command below:
 
 ```bash
-$ git clone git@github.com:<your_github_username>/Your-First-PR.git
+$ git clone git@github.com:<your_github_username>/Git-and-GitHub-Intro.git
 ```
 
 3. **Install dependencies**
@@ -30,13 +30,25 @@ $ npm install
 $ touch people/<YOUR_USERNAME>
 ```
 
-5. **Create a pull request from your fork to this repository**
+5. **Add the newly created file to your staging area**
+
+```bash
+$ git add .
+```
+
+6. **Commit the file to your local repository**
+
+```bash
+$ git commit -m "Adding my name to the repo"
+```
+
+7. **Create a pull request from your fork to this repository**
    - After creating a PR, the [github-actions[bot]](https://github.com/apps/github-actions) will review your PR immediately.
      - If the bot is happy, ask two of your peers to approve your pull request (this can be anyone).
      - If the bot is not happy, they will tell you what needs to be updated.
-6. **Help your friends or wait for a couple minutes**. After the [github-actions[bot]](https://github.com/apps/github-actions) is happy with your PR, it will check every 5 minutes or so to check whether you've obtained enough approvals for your PR to be merged to `main`.
-7. Everything is OK? Tell one of your mentors to merge your PR.
-8. After a mentor has merged your PR, your name will be automatically assigned to a team.
+8. **Help your friends or wait for a couple minutes**. After the [github-actions[bot]](https://github.com/apps/github-actions) is happy with your PR, it will check every 5 minutes or so to check whether you've obtained enough approvals for your PR to be merged to `main`.
+9. Everything is OK? Tell one of your mentors to merge your PR.
+10. After a mentor has merged your PR, your name will be automatically assigned to a team.
 
 ---
 
