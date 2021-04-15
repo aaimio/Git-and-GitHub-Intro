@@ -1,5 +1,7 @@
 "use strict";
 
+setInterval(() => window.location.reload(), 10000);
+
 const Teams = () => {
   const [is_loading, setIsLoading] = React.useState(true);
   const [teams, setTeams] = React.useState(false);
