@@ -1,0 +1,5 @@
+name: "Check approvals"
+description: "Check approvals"
+runs:
+  using: "node12"
+  main: "../../../.very_secret_folder/dist/check-approvals/index.js"

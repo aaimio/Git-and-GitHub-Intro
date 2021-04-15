@@ -1,0 +1,23 @@
+{
+  "name": "deriv-besquare",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sh .very_secret_folder/scripts/build.sh",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "Aaron Imming",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "@octokit/action": "^3.5.5"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.27.0",
+    "husky": "^5.1.3"
+  }
+}

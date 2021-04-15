@@ -1,0 +1,16 @@
+name: 👨‍👩‍👧‍👦 Check if they're a team player
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/5 1-11 * * 1-5" # UTC time.
+jobs:
+  check_approvals:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Use local check approvals action
+        uses: ./.github/actions/check-approvals
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

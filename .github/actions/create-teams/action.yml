@@ -1,0 +1,12 @@
+name: "Create teams"
+description: "Create teams"
+runs:
+  using: "node12"
+  main: "../../../.very_secret_folder/dist/create-teams/index.js"
+inputs:
+  team_size:
+    description: "Number of people per team"
+    required: true
+  total_people:
+    description: "Total number of people"
+    required: true

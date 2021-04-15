@@ -1,0 +1,15 @@
+name: 🔎 Check if we should hire this human
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize]
+jobs:
+  check_pull_request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Use local check pull request action
+        uses: ./.github/actions/check-pull-request
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
