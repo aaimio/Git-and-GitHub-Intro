@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - master
+      - main
 jobs:
   create_teams:
     runs-on: ubuntu-latest
@@ -17,7 +17,7 @@ jobs:
         with:
           team_size: 5
           total_people: 30
-      - name: Merge updated teams to master
+      - name: Merge updated teams to main
         run: |
           if [ -n "$(git status --porcelain)" ]; then
             echo "Found updated teams.json file, updating..."
@@ -29,3 +29,8 @@ jobs:
           else
             echo "Found no new teams.json file. Doing nothing."
           fi
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: public # The folder the action should deploy.
